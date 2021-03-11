@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 type ScreenContainerProps = {
   children?: React.ReactNode;
-  style?: {};
+  style?: Record<string, unknown>;
 };
 
 export const styles = StyleSheet.create({
@@ -22,7 +22,8 @@ export default function ScreenContainer({
       style={{
         ...styles.container,
         ...style,
-      }}>
+      }}
+    >
       {children}
     </View>
   );

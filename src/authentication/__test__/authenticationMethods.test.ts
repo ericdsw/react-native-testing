@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/unbound-method */
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {mocked} from 'ts-jest/utils';
+import { mocked } from 'ts-jest/utils';
 
 // System under test
 import {

@@ -1,4 +1,5 @@
-import {execute, gql, ApolloLink} from '@apollo/client';
+/* eslint-disable promise/avoid-new */
+import { execute, gql, ApolloLink } from '@apollo/client';
 
 /** Any query would be fine here */
 const MockQuery = gql`
@@ -20,7 +21,7 @@ export default async function mockExecuteRequest(
       resolve();
       return null;
     });
-    execute(ApolloLink.from([link, lastLink]), {query: MockQuery}).subscribe(
+    execute(ApolloLink.from([link, lastLink]), { query: MockQuery }).subscribe(
       (): void => {
         // Not required for our tests, subscribe merely fires the request
       },

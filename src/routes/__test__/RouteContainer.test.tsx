@@ -1,13 +1,13 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
-import {MockComponent} from '../../__mocks__/ui';
+import { MockComponent } from '../../__mocks__/ui';
 
 // System under test
 import RouteContainer from '../RouteContainer';
 
-const homeSearch = {name: 'Home'};
-const detailSearch = {name: 'Detail'};
+const homeSearch = { name: 'Home' };
+const detailSearch = { name: 'Detail' };
 
 jest.mock('../../screens', () => ({
   Home: MockComponent,

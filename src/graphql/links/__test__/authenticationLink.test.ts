@@ -1,6 +1,6 @@
-import {mocked} from 'ts-jest/utils';
+import { mocked } from 'ts-jest/utils';
 
-import {getToken} from '../../../authentication';
+import { getToken } from '../../../authentication';
 import mockAssertForLink from '../../../__mocks__/graphql/mockAssertForLink';
 import authenticationLink from '../authenticationLink';
 

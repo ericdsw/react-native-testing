@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text, Button, StyleSheet} from 'react-native';
-import {StackNavigationProp} from '@react-navigation/stack';
-import {useNavigation} from '@react-navigation/native';
+import { Text, Button, StyleSheet } from 'react-native';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { useNavigation } from '@react-navigation/native';
 
 import RootStackParamList from '../../routes/RootStackParamList';
 import ScreenContainer from '../../components/ScreenContainer';

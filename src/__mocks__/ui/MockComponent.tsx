@@ -1,5 +1,5 @@
 import React from 'react';
-import {View} from 'react-native';
+import { View } from 'react-native';
 
 type Props = {
   children?: React.ReactNode;
@@ -9,7 +9,7 @@ type Props = {
  * Mock component instance that we will use in place of external UI
  * dependencies
  */
-const MockComponent = ({children}: Props): React.ReactElement => (
+const MockComponent = ({ children }: Props): React.ReactElement => (
   <View>{children}</View>
 );
 

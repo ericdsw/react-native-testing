@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export const TOKEN_KEY = '';
@@ -24,21 +25,22 @@ export async function refreshToken(
   sourceContext: Record<string, any>,
 ): Promise<void> {
   const {
-    response: {headers},
+    response: { headers },
   } = sourceContext;
   if (headers) {
-    const token = headers[TOKEN_HEADER_KEY];
+    const token = (headers as Record<string, string>)[TOKEN_HEADER_KEY];
     if (token) {
       return AsyncStorage.setItem(TOKEN_KEY, token);
     }
   }
+  return undefined;
 }
 
 /**
  * Removes the token from local storage
  */
 export async function eraseToken(): Promise<void> {
-  AsyncStorage.removeItem(TOKEN_KEY);
+  return AsyncStorage.removeItem(TOKEN_KEY);
 }
 
 /**

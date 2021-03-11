@@ -1,5 +1,5 @@
-import {ApolloClient, InMemoryCache, ApolloLink} from '@apollo/client';
-import {baseLink, authenticationLink} from './links';
+import { ApolloClient, InMemoryCache, ApolloLink } from '@apollo/client';
+import { baseLink, authenticationLink } from './links';
 
 const rootLink = ApolloLink.from([authenticationLink, baseLink]);
 

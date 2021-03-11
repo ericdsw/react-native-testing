@@ -1,4 +1,4 @@
-import {InMemoryCache} from '@apollo/client';
+import { InMemoryCache } from '@apollo/client';
 import client from '../client';
 
 it('correctly creates client', () => {

@@ -1,4 +1,4 @@
-import {ApolloLink, Operation} from '@apollo/client';
+import { ApolloLink, Operation } from '@apollo/client';
 import mockExecuteRequest from './mockExecuteRequest';
 
 /**

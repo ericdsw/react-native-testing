@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Stack from './Stack';
-import {Home, Detail} from '../screens';
+import { Home, Detail } from '../screens';
 
 /**
  * This is the main file that will handel our app's navigation requirements.
@@ -10,13 +10,11 @@ import {Home, Detail} from '../screens';
  *
  * @returns - React element containing the entire navigation stack
  */
-const RouteContainer = (): React.ReactElement => {
-  return (
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Detail" component={Detail} />
-    </Stack.Navigator>
-  );
-};
+const RouteContainer = (): React.ReactElement => (
+  <Stack.Navigator initialRouteName="Home">
+    <Stack.Screen name="Home" component={Home} />
+    <Stack.Screen name="Detail" component={Detail} />
+  </Stack.Navigator>
+);
 
 export default RouteContainer;
