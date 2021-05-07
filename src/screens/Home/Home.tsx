@@ -36,7 +36,7 @@ const Home = (): React.ReactElement => {
         onPress={(): void => navigation.navigate('FormScreen')}
       />
       <Button
-        testID="formButton"
+        testID="compositeComponent"
         title="Go to composite component"
         onPress={(): void => navigation.navigate('CompositeComponentScreen')}
       />

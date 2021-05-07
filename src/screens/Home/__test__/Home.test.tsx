@@ -19,8 +19,20 @@ it('correctly renders with text', () => {
   expect(getByText('This is the home screen')).toBeDefined();
 });
 
-it('corectly navigates to the detail screen', () => {
+it('correctly navigates to the detail screen', () => {
   const { getByTestId } = render(<Home />);
   fireEvent(getByTestId('detailsButton'), 'press');
   expect(mockNavigate).toHaveBeenCalledWith('Detail');
+});
+
+it('correctly navigates to the form screen', () => {
+  const { getByTestId } = render(<Home />);
+  fireEvent(getByTestId('formButton'), 'press');
+  expect(mockNavigate).toHaveBeenCalledWith('FormScreen');
+});
+
+it('correctly navigates to composite component screen', () => {
+  const { getByTestId } = render(<Home />);
+  fireEvent(getByTestId('compositeComponent'), 'press');
+  expect(mockNavigate).toHaveBeenCalledWith('CompositeComponentScreen');
 });
