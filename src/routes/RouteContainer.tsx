@@ -1,7 +1,12 @@
 import React from 'react';
 
 import Stack from './Stack';
-import { Home, Detail } from '../screens';
+import {
+  Home,
+  Detail,
+  FormScreen,
+  CompositeComponentScreen
+} from '../screens';
 
 /**
  * This is the main file that will handel our app's navigation requirements.
@@ -14,6 +19,8 @@ const RouteContainer = (): React.ReactElement => (
   <Stack.Navigator initialRouteName="Home">
     <Stack.Screen name="Home" component={Home} />
     <Stack.Screen name="Detail" component={Detail} />
+    <Stack.Screen name="FormScreen" component={FormScreen} />
+    <Stack.Screen name="CompositeComponentScreen" component={CompositeComponentScreen} />
   </Stack.Navigator>
 );
 

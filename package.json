@@ -21,8 +21,10 @@
     "@react-navigation/native": "^5.9.3",
     "@react-navigation/stack": "^5.14.3",
     "add": "^2.0.6",
+    "date-fns": "^2.21.2",
     "expo": "~40.0.0",
     "expo-status-bar": "~1.0.3",
+    "formik": "^2.2.6",
     "graphql": "^15.5.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -32,7 +34,8 @@
     "react-native-safe-area-context": "3.1.9",
     "react-native-screens": "~2.15.2",
     "react-native-web": "~0.13.12",
-    "yarn": "^1.22.10"
+    "yarn": "^1.22.10",
+    "yup": "^0.32.9"
   },
   "resolutions": {
     "node-fetch": "2.6.1"

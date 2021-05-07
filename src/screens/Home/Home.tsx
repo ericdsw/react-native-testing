@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
   },
 });
 
@@ -29,6 +29,16 @@ const Home = (): React.ReactElement => {
         testID="detailsButton"
         title="Go to details"
         onPress={(): void => navigation.navigate('Detail')}
+      />
+      <Button
+        testID="formButton"
+        title="Go to form"
+        onPress={(): void => navigation.navigate('FormScreen')}
+      />
+      <Button
+        testID="formButton"
+        title="Go to composite component"
+        onPress={(): void => navigation.navigate('CompositeComponentScreen')}
       />
     </ScreenContainer>
   );
